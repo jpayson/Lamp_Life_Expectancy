@@ -140,9 +140,9 @@ print_results(xy_test_quadratic, z_test, regressor)
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
-ax.set_xlabel("I_Glow")
-ax.set_ylabel("V_Lamp / V_Lampnom")
-ax.set_zlabel("LT0_over_LT")
+ax.set_xlabel("Current (Amps)")
+ax.set_ylabel("Ratio of Actual:Advertised Voltage")
+ax.set_zlabel("Ratio of Actual:Advertised Lifetime")
 
 ax.scatter(x, y, z, c='r', marker='o', label="True Values")
 ax.plot_wireframe(X, Y, Z, rstride=5, cstride=5, label="Prediction Function")
